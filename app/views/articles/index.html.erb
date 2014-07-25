@@ -3,11 +3,15 @@
 <ul id="articles">
   <% @articles.each do |article| %>
     <li>
-      <a href="/articles/1">First Sample Article</a>
+      
 
-     
+      <%= link_to article.title, article_path(article) %>
+
+
 
       <%= link_to "Create a New Article", new_article_path, class: "new_article" %>
     </li>
   <% end %>
 </ul>
+
+
