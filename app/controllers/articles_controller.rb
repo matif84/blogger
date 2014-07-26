@@ -13,7 +13,7 @@ end
 
 def show
 	@article = Article.find(params[:id])
-	@comment = Comments.new
+	@comment = Comment.new
     @comment.article_id = @article.id
 end
 
@@ -32,7 +32,7 @@ end
 def destroy
 	@article = Article.find(params[:id])
 	@article.destroy
-  redirect_to article_path(@article)
+    redirect_to articles_path
 end
 
 
