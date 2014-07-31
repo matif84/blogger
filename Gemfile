@@ -33,6 +33,9 @@ gem "paperclip"
 # Use unicorn as the app server
 # gem 'unicorn'
 
+gem 'sorcery'
+
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
